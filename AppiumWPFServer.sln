@@ -1,9 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30324.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumWPFServer", "AppiumWPFServer\AppiumWPFServer.csproj", "{4299EB7B-FBE3-4F27-BD25-F584375F0424}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppiumWpfServer", "AppiumWPFServer\AppiumWpfServer.csproj", "{4299EB7B-FBE3-4F27-BD25-F584375F0424}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{5E149344-6E88-4A34-93B9-1AB2FD97443E}"
 EndProject

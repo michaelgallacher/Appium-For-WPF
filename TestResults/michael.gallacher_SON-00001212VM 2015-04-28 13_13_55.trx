@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2697242e-baf7-413c-8cb0-177e0d16d8ec" name="michael.gallacher@SON-00001212VM 2015-04-28 13:13:55" runUser="RINCONNETWORKS\michael.gallacher" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="0df1e15b-c4a7-4dfb-ab07-9eff8bca24ec">
+    <Deployment runDeploymentRoot="michael.gallacher_SON-00001212VM 2015-04-28 13_13_55">
+      <DeploymentItem filename="C:\Users\michael.gallacher\github\appium-for-wpf\packages\NServiceKit.Common.1.0.11\lib\net35\NServiceKit.Interfaces.dll" />
+      <DeploymentItem filename="C:\Users\michael.gallacher\github\appium-for-wpf\packages\Selenium.WebDriver.2.44.0\lib\net40\WebDriver.dll" />
+      <DeploymentItem filename="C:\Users\michael.gallacher\github\appium-for-wpf\packages\NServiceKit.Text.1.0.10\lib\net35\NServiceKit.Text.dll" />
+      <DeploymentItem filename="C:\Users\michael.gallacher\github\appium-for-wpf\packages\NServiceKit.Common.1.0.11\lib\net35\NServiceKit.Common.dll" />
+      <DeploymentItem filename="C:\Users\michael.gallacher\github\appium-for-wpf\packages\Appium.WebDriver.1.2.0.8\lib\net40\appium-dotnet-driver.dll" />
+      <DeploymentItem filename="C:\Users\michael.gallacher\github\appium-for-wpf\packages\NServiceKit.1.0.32\lib\net35\NServiceKit.ServiceInterface.dll" />
+      <DeploymentItem filename="C:\Users\michael.gallacher\github\appium-for-wpf\packages\Newtonsoft.Json.6.0.8\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="C:\Users\michael.gallacher\github\appium-for-wpf\packages\NServiceKit.1.0.32\lib\net35\NServiceKit.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-04-28T13:13:55.0843825-07:00" queuing="2015-04-28T13:13:56.2698153-07:00" start="2015-04-28T13:13:56.3322065-07:00" finish="2015-04-28T13:13:58.4535073-07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestServer" storage="c:\users\michael.gallacher\github\appium-for-wpf\unittests\bin\debug\unittests.dll" id="a991e808-8e28-453f-2f45-98c27d3aae90">
+      <Execution id="37eb2c14-c424-478e-958a-c9aa7fa2581a" />
+      <TestMethod codeBase="C:/Users/michael.gallacher/github/appium-for-wpf/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.UnitTest1, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestServer" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a991e808-8e28-453f-2f45-98c27d3aae90" executionId="37eb2c14-c424-478e-958a-c9aa7fa2581a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="37eb2c14-c424-478e-958a-c9aa7fa2581a" testId="a991e808-8e28-453f-2f45-98c27d3aae90" testName="TestServer" computerName="SON-00001212VM" duration="00:00:00.6794455" startTime="2015-04-28T13:13:56.4101955-07:00" endTime="2015-04-28T13:13:58.3443227-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37eb2c14-c424-478e-958a-c9aa7fa2581a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

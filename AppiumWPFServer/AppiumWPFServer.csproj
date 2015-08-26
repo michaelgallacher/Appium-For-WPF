@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4299EB7B-FBE3-4F27-BD25-F584375F0424}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AppiumWPFServer</RootNamespace>
-    <AssemblyName>AppiumWPFServer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>AppiumWpfServer</RootNamespace>
+    <AssemblyName>AppiumWpfServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,21 +31,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NServiceKit">
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net40-client\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NServiceKit, Version=1.0.32.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceKit.1.0.32\lib\net35\NServiceKit.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NServiceKit.Common">
+    <Reference Include="NServiceKit.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceKit.Common.1.0.11\lib\net35\NServiceKit.Common.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NServiceKit.Interfaces">
+    <Reference Include="NServiceKit.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceKit.Common.1.0.11\lib\net35\NServiceKit.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NServiceKit.ServiceInterface">
+    <Reference Include="NServiceKit.ServiceInterface, Version=1.0.32.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceKit.1.0.32\lib\net35\NServiceKit.ServiceInterface.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NServiceKit.Text">
+    <Reference Include="NServiceKit.Text, Version=1.0.10.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NServiceKit.Text.1.0.10\lib\net35\NServiceKit.Text.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,12 +66,27 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TestStack.White, Version=0.13.0.0, Culture=neutral, PublicKeyToken=2672efbf3e161801, processorArchitecture=MSIL">
+      <HintPath>..\packages\TestStack.White.0.13.3\lib\net40\TestStack.White.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="UIAutomationClient" />
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Endpoints\ElementAction_POST.cs" />
+    <Compile Include="Endpoints\Elements_POST.cs" />
+    <Compile Include="Endpoints\Element_GET.cs" />
+    <Compile Include="Endpoints\Element_POST.cs" />
+    <Compile Include="Endpoints\Keys_POST.cs" />
+    <Compile Include="Endpoints\SessionID_POST.cs" />
+    <Compile Include="Endpoints\Window_DELETE.cs" />
+    <Compile Include="Endpoints\Window_POST.cs" />
     <Compile Include="JsonWireProtocolRequest.cs" />
     <Compile Include="JsonWireProtocolResponse.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Model\ApplicationModel.cs" />
+    <Compile Include="Model\Errors.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\ServerModel.cs" />

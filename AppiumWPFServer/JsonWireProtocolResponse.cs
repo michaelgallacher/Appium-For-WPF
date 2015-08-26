@@ -1,12 +1,14 @@
-﻿namespace AppiumWpfServer
-{
-    public class JsonWireProtocolResponse
-    {
-        public JsonWireProtocolResponse()
-        {
-            Status = 0;
-        }
+﻿using System.Collections.Generic;
 
-        public int Status { get; set; }
-    }
+namespace AppiumWpfServer
+{
+	public class JsonWireProtocolResponse : Dictionary<string, object>
+	{
+		public JsonWireProtocolResponse()
+		{
+			status = 0;
+		}
+
+		private int status { get; set; }
+	}
 }
